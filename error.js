@@ -387,7 +387,7 @@ if (f() = 42) { // NON_REFERENCE_LHS alarm
 
 // Example 1
 function foo() {
-    var obj;
+    var obj == {};
     var y = obj.x; // NULL_POINTER alarm
 }
 
