@@ -16,6 +16,15 @@ function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
         arr[x] = 3;
     }
 }
+
+function CWE_398() { // IDENTICAL_BRANCHES
+    if (x >= 0) {
+        y = x;
+    } else {
+        y = x;
+    }
+}
+
 if (x < 0) {
     arr[x] = 3; // ARRAY_INDEX_NEGATIVE alarm: x is negative but is used as array index.
 }
