@@ -25,6 +25,12 @@ function CWE_398() { // IDENTICAL_BRANCHES
     }
 }
 
+function CWE_476() { // NULL_POINTER
+    var obj;
+    var y = obj.x;
+    console.log(y);
+}
+
 if (x < 0) {
     arr[x] = 3; // ARRAY_INDEX_NEGATIVE alarm: x is negative but is used as array index.
 }
