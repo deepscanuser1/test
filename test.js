@@ -6,3 +6,5 @@ function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION
 function CWE_482_665() { // UNUSED_EXPR
     this.foo;
 }
+
+var a = 0;
