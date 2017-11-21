@@ -31,6 +31,12 @@ function CWE_476() { // NULL_POINTER
     console.log(y);
 }
 
+function CWE_480() { // BAD_BITWISE_OPERATOR
+    var obj = null;
+    if (obj & obj.prop) {
+        console.log(obj.prop);
+    }
+}
 if (x < 0) {
     arr[x] = 3; // ARRAY_INDEX_NEGATIVE alarm: x is negative but is used as array index.
 }
