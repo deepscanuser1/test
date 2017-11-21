@@ -8,3 +8,4 @@ function CWE_482_665() { // UNUSED_EXPR
 }
 
 var a = 0;
+var b = 0;
