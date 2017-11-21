@@ -10,11 +10,12 @@ class B extends A {
 
 new B();
 
-var arr = [1, 2, 3];
-var mytest;
-var mytest2;
-var b = mytest2.a;
-console.log(b);
+function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
+    var arr = [1, 2, 3];
+    if (x < 0) {
+        arr[x] = 3;
+    }
+}
 if (x < 0) {
     arr[x] = 3; // ARRAY_INDEX_NEGATIVE alarm: x is negative but is used as array index.
 }
