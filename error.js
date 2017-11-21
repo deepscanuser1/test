@@ -13,6 +13,7 @@ new B();
 var arr = [1, 2, 3];
 var mytest;
 var b = mytest.a;
+console.log(b);
 if (x < 0) {
     arr[x] = 3; // ARRAY_INDEX_NEGATIVE alarm: x is negative but is used as array index.
 }
