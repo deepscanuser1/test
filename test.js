@@ -28,3 +28,11 @@ function foo() {
 if (x == null) { // (x == null) should be modified to (x != null).
     y = x.a; // NULL_POINTER alarm: x is undefined or null but is property-accessed.
 }
+
+function CWE_628() { // TOO_MANY_ARGS
+        function add(x, y) {
+            return x + y;
+        }
+        var sum = add(1, 2, 3);
+        console.log(sum);
+    }
