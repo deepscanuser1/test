@@ -11,7 +11,33 @@ class B extends A {
 new B();
 new B();
 
-var arr = [1, 2, 3];
+function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
+    var arr = [1, 2, 3];
+    if (x < 0) {
+        arr[x] = 3;
+    }
+}
+
+function CWE_398() { // IDENTICAL_BRANCHES
+    if (x >= 0) {
+        y = x;
+    } else {
+        y = x;
+    }
+}
+
+function CWE_476() { // NULL_POINTER
+    var obj;
+    var y = obj.x;
+    console.log(y);
+}
+
+function CWE_480() { // BAD_BITWISE_OPERATOR
+    var obj = null;
+    if (obj & obj.prop) {
+        console.log(obj.prop);
+    }
+}
 if (x < 0) {
     arr[x] = 3; // ARRAY_INDEX_NEGATIVE alarm: x is negative but is used as array index.
 }
