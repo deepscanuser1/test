@@ -9,6 +9,7 @@ class B extends A {
 }
 
 new B();
+new B();
 
 var arr = [1, 2, 3];
 if (x < 0) {
